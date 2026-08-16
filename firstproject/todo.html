@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...JSON TUTORIAL IN JAVA SCRIPT...</title>
+</head>
+<body>
+    <script>
+        // making an object
+        let jsonobj = {
+            name:'fatima',
+            age:20,
+            channel:'foodexplore',
+            food:'biryani',
+
+        }
+        
+        console.log(jsonobj);
+        // object ko string ma convert karnna
+        // by using JSON.stringify function
+        let str=JSON.stringify(jsonobj);
+        console.log(str);
+        // ab is par string ka sara function apply hu sakhty hi
+        let r1=str.replace('fatima','fatima shoukat');
+        console.log(r1);
+        // Now to convert this string again into an object, we can write as follows-
+       let dobaraobj= JSON.parse(str);
+       console.log(dobaraobj);
+    </script>
+</body>
+</html>
